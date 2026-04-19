@@ -115,7 +115,7 @@ The lab focuses on building practical skills in:
 
 ### 1️⃣ Clone Repository
 ```bash
-git clone https://github.com/Yadnesh-Patil-12/FSDL.git
+git clone https://github.com/pankajgill1973/FSDL.git
 cd FSDL
 
 2️⃣ Install Dependencies
