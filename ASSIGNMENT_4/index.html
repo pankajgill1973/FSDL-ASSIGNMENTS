@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<nav class="navbar navbar-dark bg-primary p-3">
+    <div class="container-fluid">
+        <h3 class="text-white">🌤 Weather Dashboard</h3>
+        <div>
+            <input type="text" id="cityInput" placeholder="Enter city" class="form-control d-inline" style="width:200px;">
+            <button onclick="searchCity()" class="btn btn-light">Search</button>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-5 text-center">
+    <h2 id="cityName">City</h2>
+    <h1 id="temperature">--</h1>
+    <p id="weatherCondition">Condition</p>
+</div>
+
+<div class="container mt-5">
+    <canvas id="temperatureChart"></canvas>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

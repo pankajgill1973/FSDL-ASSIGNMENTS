@@ -1,0 +1,125 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+color:white;
+}
+
+.container{
+padding:60px 10%;
+}
+
+/* NAV */
+nav{
+display:flex;
+justify-content:center;
+margin-bottom:30px;
+}
+
+nav ul li{
+display:inline-block;
+margin:10px 20px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:#00d4ff;
+}
+
+/* HEADER */
+.line{
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+}
+
+.logo{
+width:250px;
+border-radius:50%;
+border:3px solid #00d4ff;
+}
+
+.header-text h1{
+font-size:50px;
+}
+
+.header-text span{
+color:#00d4ff;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background: linear-gradient(45deg,#00d4ff,#7b2ff7);
+border-radius:6px;
+color:white;
+text-decoration:none;
+}
+
+/* SECTION */
+section{
+margin-top:80px;
+}
+
+h1{
+margin-bottom:20px;
+}
+
+/* CARDS */
+.project, .edu-item{
+background: rgba(255,255,255,0.08);
+padding:20px;
+border-radius:10px;
+margin-bottom:20px;
+transition:0.3s;
+backdrop-filter: blur(10px);
+}
+
+.project:hover{
+transform:scale(1.05);
+background: linear-gradient(45deg,#00d4ff,#7b2ff7);
+}
+
+/* CONTACT */
+.contact-container{
+background:white;
+color:black;
+padding:30px;
+border-radius:10px;
+max-width:400px;
+margin:auto;
+}
+
+input, textarea{
+width:100%;
+padding:10px;
+margin:10px 0;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+button{
+width:100%;
+padding:10px;
+background:#203a43;
+color:white;
+border:none;
+cursor:pointer;
+}
+
+button:hover{
+background:#00d4ff;
+}
