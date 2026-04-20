@@ -1,0 +1,14 @@
+{
+  "name": "hms-project",
+  "version": "1.0.0",
+  "description": "Smart Hospital Management System",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "npm --prefix server run dev",
+    "client": "npm --prefix client run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

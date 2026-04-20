@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Clinical Serenity | Smart Hospital Management System</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-fixed": "#001b3d",
+              "inverse-on-surface": "#f0f1f2",
+              "tertiary-container": "#006f1c",
+              "surface-container-high": "#e7e8e9",
+              "primary": "#00478d",
+              "outline": "#727783",
+              "on-tertiary": "#ffffff",
+              "surface-bright": "#f8f9fa",
+              "on-primary-container": "#c8daff",
+              "primary-container": "#005eb8",
+              "surface-variant": "#e1e3e4",
+              "surface-tint": "#005db6",
+              "on-primary": "#ffffff",
+              "on-surface-variant": "#424752",
+              "on-secondary-fixed-variant": "#005047",
+              "error": "#ba1a1a",
+              "on-secondary": "#ffffff",
+              "inverse-surface": "#2e3132",
+              "on-error-container": "#93000a",
+              "on-secondary-container": "#006f62",
+              "on-secondary-fixed": "#00201b",
+              "tertiary": "#005413",
+              "primary-fixed-dim": "#a9c7ff",
+              "on-tertiary-fixed-variant": "#005313",
+              "secondary-container": "#94f0df",
+              "surface-container-highest": "#e1e3e4",
+              "error-container": "#ffdad6",
+              "tertiary-fixed": "#98f994",
+              "outline-variant": "#c2c6d4",
+              "secondary-fixed-dim": "#7ad7c6",
+              "inverse-primary": "#a9c7ff",
+              "on-background": "#191c1d",
+              "tertiary-fixed-dim": "#7ddc7a",
+              "primary-fixed": "#d6e3ff",
+              "secondary-fixed": "#97f3e2",
+              "on-tertiary-fixed": "#002204",
+              "surface-container-lowest": "#ffffff",
+              "surface-dim": "#d9dadb",
+              "on-error": "#ffffff",
+              "surface-container-low": "#f3f4f5",
+              "on-tertiary-container": "#90f08c",
+              "on-primary-fixed-variant": "#00468c",
+              "surface": "#f8f9fa",
+              "surface-container": "#edeeef",
+              "on-surface": "#191c1d",
+              "secondary": "#006b5e",
+              "background": "#f8f9fa"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased">
+<!-- TopNavBar -->
+<header class="bg-surface/80 backdrop-blur-md docked full-width sticky top-0 z-50 shadow-[0_24px_40px_rgba(0,71,141,0.04)]">
+<div class="max-w-7xl mx-auto px-8 h-20 flex items-center justify-between">
+<div class="text-2xl font-bold text-primary tracking-tight">Clinical Serenity</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-primary font-bold border-b-2 border-primary pb-1" href="#home">Home</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#doctors">Doctors</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#about">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#contact">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="px-6 py-2 rounded-lg bg-gradient-to-r from-primary to-primary-container text-on-primary font-semibold hover:opacity-90 transition-all active:scale-95 duration-200">Login / Register</button>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative overflow-hidden bg-surface py-20 lg:py-32" id="home">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="relative z-10">
+<h1 class="text-5xl lg:text-7xl font-extrabold text-on-surface tracking-tight leading-tight mb-6">
+                        Welcome to Smart Hospital Management System
+                    </h1>
+<p class="text-xl text-on-surface-variant leading-relaxed mb-10 max-w-xl">
+                        Experience a digital sanctuary of healthcare. Our advanced systems streamline your journey from clinical precision to personalized wellness.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="px-8 py-4 rounded-xl bg-gradient-to-r from-primary to-primary-container text-on-primary font-bold text-lg shadow-lg hover:shadow-primary/20 transition-all active:scale-95">
+                            Book Appointment
+                        </button>
+<button class="px-8 py-4 rounded-xl text-primary font-bold text-lg hover:bg-surface-container-high/50 transition-all active:scale-95">
+                            Learn More
+                        </button>
+</div>
+</div>
+<div class="relative">
+<div class="absolute -top-20 -right-20 w-96 h-96 bg-primary-fixed-dim/20 blur-[100px] rounded-full"></div>
+<div class="relative rounded-3xl overflow-hidden shadow-2xl">
+<img alt="Modern hospital interior" class="w-full h-[500px] object-cover" data-alt="Modern minimalist high-end hospital lobby interior" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpeneLkXfhSOxODzQOIs2_OgGD-Gb3C_GsE_DCVSi8_ec3oPavOj6F6nHIb6YKmJGZZyqy_0VJw5_SnwjrrbLv-USnEme_tLy6e6ggcOYA9yypcGIjHPBP519b2thcIpO4GcR4Jht3Qt4AC7_FNHmsvnQFq6342ekgBti0lRlMA05ES5Y40xqCYf_8tfb0E4zFS6iwj4rQiYJNXTQz3rlSAHZvbgPQunqb6BQBqhXDDmuFURQvWjiN51SqvlLjmsl5QZe3qf2lY9Y"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-primary-fixed/40 to-transparent"></div>
+</div>
+<!-- Floating Data Card -->
+<div class="absolute -bottom-10 -left-10 p-6 bg-surface-container-lowest/80 backdrop-blur-xl rounded-2xl shadow-xl border border-white/20 max-w-xs">
+<div class="flex items-center gap-4 mb-3">
+<span class="material-symbols-outlined text-tertiary text-3xl">verified_user</span>
+<div class="text-sm font-bold text-on-surface">Digital Medical Secure Storage</div>
+</div>
+<p class="text-xs text-on-surface-variant">Your health records are encrypted and accessible only to you and your verified physicians.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section (Bento Grid Style) -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-extrabold text-on-surface mb-4">Our Premium Services</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">Transcending traditional medical care through seamless technology integration.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Large Card -->
+<div class="md:col-span-2 p-10 bg-surface-container-lowest rounded-xl flex flex-col justify-between group hover:bg-primary hover:text-on-primary transition-all duration-300">
+<div>
+<span class="material-symbols-outlined text-4xl mb-6 block text-primary group-hover:text-on-primary">calendar_month</span>
+<h3 class="text-2xl font-bold mb-4">Online Appointment Booking</h3>
+<p class="text-on-surface-variant group-hover:text-on-primary/80 leading-relaxed max-w-md">Schedule your visits with clinical precision. Choose your preferred specialist and time slot instantly without the wait.</p>
+</div>
+<div class="mt-8 flex items-center gap-2 font-bold cursor-pointer">
+                            Book Now <span class="material-symbols-outlined">arrow_forward</span>
+</div>
+</div>
+<!-- Small Card -->
+<div class="p-10 bg-surface-container-lowest rounded-xl group hover:bg-secondary hover:text-on-secondary transition-all duration-300">
+<span class="material-symbols-outlined text-4xl mb-6 block text-secondary group-hover:text-on-secondary">description</span>
+<h3 class="text-2xl font-bold mb-4">Digital Medical Records</h3>
+<p class="text-on-surface-variant group-hover:text-on-secondary/80">Access your complete history anywhere, anytime with our secure patient portal.</p>
+</div>
+<!-- Small Card -->
+<div class="p-10 bg-surface-container-lowest rounded-xl group hover:bg-tertiary hover:text-on-tertiary transition-all duration-300">
+<span class="material-symbols-outlined text-4xl mb-6 block text-tertiary group-hover:text-on-tertiary">medical_services</span>
+<h3 class="text-2xl font-bold mb-4">Expert Doctors</h3>
+<p class="text-on-surface-variant group-hover:text-on-tertiary/80">Consult with world-class specialists across multiple disciplines.</p>
+</div>
+<!-- Small Card -->
+<div class="md:col-span-2 p-10 bg-surface-container-lowest rounded-xl group hover:bg-error hover:text-on-error transition-all duration-300">
+<div class="flex flex-col md:flex-row gap-10 items-center">
+<div class="flex-1">
+<span class="material-symbols-outlined text-4xl mb-6 block text-error group-hover:text-on-error">emergency</span>
+<h3 class="text-2xl font-bold mb-4">24/7 Emergency Support</h3>
+<p class="text-on-surface-variant group-hover:text-on-error/80 leading-relaxed">Our trauma center is always open. Immediate response units ready for any medical crisis around the clock.</p>
+</div>
+<div class="w-full md:w-48 h-32 bg-surface-container-high/20 rounded-lg flex items-center justify-center">
+<span class="text-4xl font-extrabold group-hover:scale-110 transition-transform">911</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Doctor Preview Section -->
+<section class="py-24 bg-surface" id="doctors">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex justify-between items-end mb-16">
+<div>
+<h2 class="text-4xl font-extrabold text-on-surface mb-2">Our Specialists</h2>
+<p class="text-on-surface-variant">Exceptional minds dedicated to your recovery.</p>
+</div>
+<button class="px-6 py-2 rounded-lg text-primary font-bold hover:bg-surface-container-low transition-all">View All Doctors</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Doctor 1 -->
+<div class="group">
+<div class="relative rounded-2xl overflow-hidden mb-6 h-[400px]">
+<img alt="Doctor" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Professional portrait of a male cardiologist in clinical attire" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBopts55VgZ1m3GhqgAI4RqdYCas0EzxIikKoSFwDwe3rpf39ZwxczL-tywoTgq_vNyYjKLk2QKkKhtXkAL0qiQDnLa4CHXxuRiIBhxoBL69uIP4Cl4h6k_Mdz7-OECgBiuKXiVHEW8RHyfjH8VJaW0DUOpkXTNKC6U1rca3jrml4w2MxktcAYOI40pKgAYG5GssatJtJU49TbVCd0khSBd0xCsQBi1O9mgl7NIQegf-bjajoHjg8gNRM-PPg0EBYJfUPdyOmHSb4s"/>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 bg-surface-container-lowest/90 backdrop-blur text-xs font-bold rounded-full text-primary uppercase tracking-wider">Cardiology</span>
+</div>
+</div>
+<h4 class="text-xl font-bold text-on-surface">Dr. Julian Vance</h4>
+<p class="text-on-surface-variant mb-4">Senior Consultant, Cardiac Surgery</p>
+<button class="w-full py-3 rounded-lg border border-primary text-primary font-bold hover:bg-primary hover:text-on-primary transition-all active:scale-[0.98]">Book Appointment</button>
+</div>
+<!-- Doctor 2 -->
+<div class="group">
+<div class="relative rounded-2xl overflow-hidden mb-6 h-[400px]">
+<img alt="Doctor" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Professional portrait of a female pediatrician smiling in office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRCgsBk9_HMOu1jEkP3v4s6fx1Js08nK2h70r2-wDEAIlOAN88eXafhC0Gij6P1zsmo94rP9rXqxlVqW9iriosyLTtSFcFrebkwRrSSazMjdIhcww0gHMvw1RUeYOexJG7MXpVIh9DDrGCCk0xzz5bwz0Jk94GAOot1wu7YLkDc4Khqb8A5yyAMGilwO8gRL_OWEGNIZhb8AAaR6HbPvu6l-kIrSO8h5IW2O5H2-bZTy2jzDW3TjWBjkopngi1iCVs1K-b38gLOsA"/>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 bg-surface-container-lowest/90 backdrop-blur text-xs font-bold rounded-full text-primary uppercase tracking-wider">Pediatrics</span>
+</div>
+</div>
+<h4 class="text-xl font-bold text-on-surface">Dr. Elena Rodriguez</h4>
+<p class="text-on-surface-variant mb-4">Lead Specialist, Child Health</p>
+<button class="w-full py-3 rounded-lg border border-primary text-primary font-bold hover:bg-primary hover:text-on-primary transition-all active:scale-[0.98]">Book Appointment</button>
+</div>
+<!-- Doctor 3 -->
+<div class="group">
+<div class="relative rounded-2xl overflow-hidden mb-6 h-[400px]">
+<img alt="Doctor" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Professional portrait of a female neurologist in clinical setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDL_xqpBLa0_if94Lo6Rlv8e-GGsoZOmzWT43QRoNWAJqIV5htMyPlDkgLvF5hiLUjlmjRakNrEaHQMABkgoHeio_OnIZH7dwh9KyAxFAvETKmaOHtKuaF6T02iGFKNPKfK6Y_XGPqaQCKYFLwQ3rpIKhJLHLX7ZPecBZBzVPFWS5utPA72mpcgFAXVRneCl9HXezsmB-1ur9BCPoGDYrxBikheHgZX1RfMiJ2WJWq_rMWlqi-5fYXvp64hdJYsgPfPjT7Xyyr2_Hg"/>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 bg-surface-container-lowest/90 backdrop-blur text-xs font-bold rounded-full text-primary uppercase tracking-wider">Neurology</span>
+</div>
+</div>
+<h4 class="text-xl font-bold text-on-surface">Dr. Sarah Chen</h4>
+<p class="text-on-surface-variant mb-4">Neuroscience Department Head</p>
+<button class="w-full py-3 rounded-lg border border-primary text-primary font-bold hover:bg-primary hover:text-on-primary transition-all active:scale-[0.98]">Book Appointment</button>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-24 bg-surface-container-low overflow-hidden" id="about">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-4 pt-12">
+<img alt="Medical Team" class="rounded-2xl shadow-lg w-full h-64 object-cover" data-alt="Doctors analyzing patient data on a digital tablet" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCV-wiYIZMNsM4-da4HQl9m6YbS2sWE2IHhky5Q3oKfCrXtwYZE2hhWGaMV4vTGSjv-e0mObvyYZr5H9CiOtoQpfrElMCL08m7_33ZFfZ5CBZzvVneYoSgmmIdHC9lstYfLB3K1d-qfMxn42OpWisjDog--tSqfMauTmD35a4eiLJVQ-_LqK8zb3HXTPUKI566rOjnr_rJY1XfLeQdO8wH3YR_52ihYmnu5w7IG5UPRLIWji4nLxh2PIHcHi0xMiYP0KsciTt2o5o"/>
+<div class="bg-primary p-8 rounded-2xl text-on-primary">
+<div class="text-4xl font-extrabold mb-2">15+</div>
+<div class="text-sm opacity-80 font-medium">Years of Clinical Excellence</div>
+</div>
+</div>
+<div class="space-y-4">
+<div class="bg-surface-container-lowest p-8 rounded-2xl">
+<div class="text-4xl font-extrabold text-secondary mb-2">99%</div>
+<div class="text-sm text-on-surface-variant font-medium">Patient Satisfaction Rate</div>
+</div>
+<img alt="Lab" class="rounded-2xl shadow-lg w-full h-80 object-cover" data-alt="High-tech medical research laboratory" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZuUeKIxO-tvi8eaQmxPl5jYsbho6EkdVdsioT1CRFracW84or1iuZ4u-3SvWeFJL2XiY-IsEcmv0mM-hbRyQAe8xFeTZF1k9amtOjR0wGw1E5c8yfb5OAXJo-C_VRdmzpJOi7c-UvaaQZec7TU55zREAxbZCkAwK3yoqdq4mHerqYS8HUxJAZBAxN0a2Cd-ND23isOozADWnXdRdJvQQMTnftHZqxzPfkVaarpF_-q7LfKeYRArm74uGORiKkF3GlXML-c8DVTPs"/>
+</div>
+</div>
+<div>
+<h2 class="text-4xl lg:text-5xl font-extrabold text-on-surface tracking-tight mb-8">Transcending traditional medical care.</h2>
+<div class="space-y-6">
+<div class="p-6 bg-surface-container-lowest rounded-xl">
+<h4 class="font-bold text-primary mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined">visibility</span> Our Vision
+                            </h4>
+<p class="text-on-surface-variant leading-relaxed">To become the global benchmark for patient-centric digital healthcare systems, where technology and human compassion coexist perfectly.</p>
+</div>
+<div class="p-6 bg-surface-container-lowest rounded-xl">
+<h4 class="font-bold text-secondary mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined">flag</span> Our Mission
+                            </h4>
+<p class="text-on-surface-variant leading-relaxed">Providing accessible, high-quality healthcare through innovative management systems that empower both clinicians and patients alike.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-24 bg-surface" id="contact">
+<div class="max-w-7xl mx-auto px-8">
+<div class="bg-surface-container-low rounded-[2rem] p-12 lg:p-20 overflow-hidden relative">
+<div class="absolute top-0 right-0 w-1/3 h-full bg-primary/5 -skew-x-12 transform translate-x-20"></div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 relative z-10">
+<div>
+<h2 class="text-4xl font-extrabold text-on-surface mb-6">Get in Touch</h2>
+<p class="text-on-surface-variant mb-12 max-w-md">Have questions? Our support team is here to assist you 24/7 with any inquiries about our services.</p>
+<div class="space-y-8">
+<div class="flex items-start gap-6">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-primary">mail</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface">Email Us</h4>
+<p class="text-on-surface-variant">support@clinicalserenity.com</p>
+</div>
+</div>
+<div class="flex items-start gap-6">
+<div class="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-secondary">call</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface">Call Center</h4>
+<p class="text-on-surface-variant">+1 (555) 000-1234</p>
+</div>
+</div>
+<div class="flex items-start gap-6">
+<div class="w-12 h-12 rounded-full bg-tertiary/10 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-tertiary">location_on</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface">Location</h4>
+<p class="text-on-surface-variant">123 Wellness Blvd, Medical District, NY 10001</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-8 lg:p-12 rounded-2xl shadow-xl">
+<form action="#" class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-sm font-bold text-on-surface-variant">Full Name</label>
+<input class="w-full bg-surface-container-highest border-none rounded-lg focus:ring-2 focus:ring-primary transition-all px-4 py-3" placeholder="John Doe" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold text-on-surface-variant">Email Address</label>
+<input class="w-full bg-surface-container-highest border-none rounded-lg focus:ring-2 focus:ring-primary transition-all px-4 py-3" placeholder="john@example.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold text-on-surface-variant">Message</label>
+<textarea class="w-full bg-surface-container-highest border-none rounded-lg focus:ring-2 focus:ring-primary transition-all px-4 py-3" placeholder="How can we help you today?" rows="4"></textarea>
+</div>
+<button class="w-full py-4 bg-primary text-on-primary font-bold rounded-xl hover:opacity-90 transition-all active:scale-[0.98]" type="submit">Send Message</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low full-width pt-16 pb-8">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="space-y-4">
+<div class="text-xl font-bold text-primary">Clinical Serenity</div>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                    Transcending traditional medical care. A digital sanctuary for modern healthcare management.
+                </p>
+</div>
+<div>
+<h5 class="font-bold mb-4 text-on-surface">Quick Links</h5>
+<ul class="space-y-2 text-sm">
+<li><a class="text-on-surface-variant hover:text-primary transition-all hover:underline decoration-primary/30" href="#home">Home</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all hover:underline decoration-primary/30" href="#doctors">Doctors</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all hover:underline decoration-primary/30" href="#about">About</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all hover:underline decoration-primary/30" href="#contact">Contact</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold mb-4 text-on-surface">Legal</h5>
+<ul class="space-y-2 text-sm">
+<li><a class="text-on-surface-variant hover:text-primary transition-all hover:underline decoration-primary/30" href="#">Privacy Policy</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all hover:underline decoration-primary/30" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold mb-4 text-on-surface">Stay Updated</h5>
+<p class="text-sm text-on-surface-variant mb-4">Join our newsletter for health tips.</p>
+<div class="flex">
+<input class="w-full bg-surface-container-high border-none rounded-l-lg text-sm px-4" placeholder="Email" type="email"/>
+<button class="bg-primary text-on-primary px-4 py-2 rounded-r-lg font-bold">Join</button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-outline-variant/15 text-center">
+<p class="text-on-surface-variant text-xs font-medium">© 2024 Clinical Serenity. Transcending traditional medical care.</p>
+</div>
+</footer>
+</body></html>
